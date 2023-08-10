@@ -5,7 +5,7 @@ import Footer from "../footer";
 
 import './app.css';
 const App = () => {
-    const taskList = [
+    const tasks = [
         { status: "completed", description: "Completed task", created: new Date() },
         { status: "editing", description: "Editing task", created: new Date() },
         { status: "", description: "Active task", created: new Date() },
@@ -17,7 +17,7 @@ const App = () => {
                 <NewTaskForm />
             </header>
             <section className="main">
-                <TaskList tasks={taskList}/>
+                <TaskList tasks={tasks}/>
                 <Footer />
             </section>
         </section>
