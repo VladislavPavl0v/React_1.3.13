@@ -1,10 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 
 import './task-filter.css'
+//import { render } from "@testing-library/react";
 
-
-const TasksFilter = () =>{
-return (
+export default class TaskFilter extends Component {
+render(){
+  return (
     <ul className="filters">
     <li>
       <button className="selected">All</button>
@@ -19,5 +20,4 @@ return (
     );
 
 }
-
-export default TasksFilter;
+}
